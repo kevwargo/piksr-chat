@@ -1,0 +1,46 @@
+<html>
+
+    <head>
+        <title>Serverless chat</title>
+        <meta charset="utf-8" />
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="/style.css"/>
+        <script type="text/javascript" src="/renderjson.js"></script>
+        <script type="text/javascript" src="/api.js"></script>
+        <script type="text/javascript" src="/channels.js"></script>
+        <script type="text/javascript" src="/index.js"></script>
+    </head>
+
+    <body>
+        <h1>Serverless chat</h1>
+        <div id="templates">
+            <div class="channel-panel">
+                <div class="messages-container"></div>
+                <input class="message-input" type="text"/>
+                <button class="send-button">Send</button>
+            </div>
+            <div class="message">
+                <span class="date-time"></span>
+                <span class="user-name"></span>
+                <span class="message-text"></span>
+            </div>
+            <li class="channel-tab">
+                <a></a>
+            </li>
+        </div>
+        <div id="join-channel-dialog">
+            <input type="text"/>
+        </div>
+        <div id="user-dialog">
+            <input type="text"/>
+        </div>
+        <button id="join-button">Join channel</button>
+        <div id="channels">
+            <ul id="channels-tabs"></ul>
+        </div>
+        <pre id="error" style="color: red;"></pre>
+    </body>
+    
+</html>

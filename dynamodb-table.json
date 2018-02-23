@@ -1,0 +1,15 @@
+{
+    "TableName": "messages",
+    "KeySchema": [
+      { "AttributeName": "channel", "KeyType": "HASH" },
+      { "AttributeName": "timestamp", "KeyType": "RANGE" }
+    ],
+    "AttributeDefinitions": [
+      { "AttributeName": "channel", "AttributeType": "S" },
+      { "AttributeName": "timestamp", "AttributeType": "N" }
+    ],
+    "ProvisionedThroughput": {
+      "ReadCapacityUnits": 5,
+      "WriteCapacityUnits": 5
+    }
+}
