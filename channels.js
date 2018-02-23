@@ -28,6 +28,7 @@ function initChannels(state) {
     
     $dialog.dialog({
         autoOpen: false,
+        title: 'Choose channel name',
         buttons: {
             'Join': function() {
                 joinChannel($channels, $(this).find('input').val());

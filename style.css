@@ -5,3 +5,13 @@ h1 {
 #templates {
     display: none;
 }
+
+.message .user-name {
+    font-weight: bold;
+    color: #129040;
+}
+
+.message .date-time {
+    font-weight: bold;
+    color: #a22000;
+}

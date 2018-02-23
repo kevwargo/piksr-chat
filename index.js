@@ -15,6 +15,7 @@ $(function() {
                     state.user = user;
                     initApi();
                     initChannels(state);
+                    $('h1').append(' (Username: ' + user + ')');
                     $this.dialog('close');
                 }
             }
