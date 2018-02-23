@@ -10,6 +10,7 @@ Created using AWS Lambda, S3 and DynamoDB.
 4. Choose different username
 5. Join a channel with the same name in both tabs
 6. Write some test messages
+7. Try joining other channels
 
 
 ## Notes
