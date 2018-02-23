@@ -31,8 +31,13 @@ function initChannels(state) {
         title: 'Choose channel name',
         buttons: {
             'Join': function() {
-                joinChannel($channels, $(this).find('input').val());
-                $(this).dialog('close');
+                var $this = $(this),
+                    $input = $this.find('input');
+                if ($input.val()) {
+                    joinChannel($channels, $input.val());
+                    $input.val('');
+                    $this.dialog('close');
+                }
             }
         }
     });
