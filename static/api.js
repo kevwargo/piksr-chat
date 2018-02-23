@@ -33,7 +33,7 @@ function loadMessages($channelPanel, loadState) {
                 var $message = $('#templates .message').clone();
                 $message.data('timestamp', data[i].timestamp);
                 $message.find('.date-time').text(dateFormat(new Date(data[i].timestamp)));
-                $message.find('.user-name').text(data[i].user);
+                $message.find('.user-name').text(data[i].user + ':');
                 $message.find('.message-text').text(data[i].message);
                 $messagesContainer.append($message);
             }
